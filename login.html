@@ -2,22 +2,48 @@
 <html lang="es"> 
 <head>
     <title>Frontend Bootstrap 4.3.1</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="Public/css/materialize.min.css"/>
     <!--Custom CSS-->
     <link type="text/css" rel="stylesheet" href="Public/css/custom.css"  rel="stylesheet"/>
 </head>
  
-<body class="login login-action-login wp-core-ui  locale-en-us">
-    <!--Menu de la aplicacion-->
-    <div id="login">
-        <h1>
-            <a href="Public/imagenes/materialize-logo.png" title="Powered by WordPress" tabindex="-1">email me</a>
-        </h1>
-    </div>
+<body>
+    <!--Login-->
+    <select id="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 push-s1">
+                    <div class="row">
+                        <div class="col m5 hide-on-amall-only">
+                            imagen
+                        </div>
+                        <div class="col s12 m7">
+                            <h1 clase:"formtitulo">Registrate</h1>
+                            <form clase:"sinup-form" action="" method="post" accept-charset="utf-8">
+                                <h2>Registrate para acceder a la palataforma</h2>
+                                <div class="section">
+                                    <a class="btn btn-fb hiden-on-small-only" href="">iniciar sesion facebook</a>
+                                    <a class="btn btn-fb hiden-on-med-and-up" href="">inisiar sesionemail me</a>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="section">
+                                    <input type="email" name="email" placeholder="correo electronico">
+                                    <input type="text" name="nombre" placeholder="nombre completo: Guillermo Luna">
+                                    <input type="text" name="username" placeholder="nombre de usuario">
+                                    <input type="password" name="password" placeholder="contraseña">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </select>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="Public/javascript/materialize.min.js"></script>
 </body>
